@@ -1,0 +1,8 @@
+flask
+flask-restful
+joblib
+requests
+numpy
+pandas
+sklearn
+APScheduler
