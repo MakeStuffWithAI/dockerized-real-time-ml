@@ -11,6 +11,8 @@ Updates are every 30 minutes by default, and retraining is every 31 minutes by d
 You can change the Environment Variables in the Dockerfile to adjust
 the UPDATE_INTERVAL and RETRAIN_INTERVAL.
 
+Updates and retraining can be forced by sending a GET request to http://0.0.0.0:5000/update and http://0.0.0.0:5000/retrain respectively.
+Scheduled updates and retraining will not be affected by forcing one of them.
 
 ## REQUIREMENTS
 unix or linux OS
@@ -22,6 +24,7 @@ docker
 ## TO-RUN
 clone the project into a local directory
 navigate to that directory
+Then run:
 ```docker build -t ml-project .```
 ```docker run -p 5000:5000 ml-project```
 
